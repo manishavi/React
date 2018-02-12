@@ -14,14 +14,19 @@
 </head>
 
 <body>
-
+    <div id="container"></div>
     <script type="text/babel">//Use babel
         ReactDOM.render(
             <h1>
                 Hello React
             </h1>,
-            document.body
+            document.querySelector('container')
         );
+ /* var destination = document.querySelector("#container"); 
+    ReactDOM.render(
+        <h1>Hello React</h1>,
+        destination );
+*/
     </script>
 </body>
 
