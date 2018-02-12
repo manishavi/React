@@ -11,6 +11,45 @@
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <style>
+        /* @keyframes example {
+            from {background-color: rgb(221, 73, 81);}
+            to {background-color: yellow;}
+        } */
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+        #container {
+            width: 50px;
+            height: 50px;
+            padding: 100px;
+            margin: 10px;
+            background-color: aquamarine;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: 10;
+
+        }
+        #container h1 {
+            font-size: 150px;
+            font-family: sans-serif;
+            color: #1d0972
+        }
+        #container h1:hover, h1:active {
+            font-family: monospace;
+            color: rgb(207, 38, 151);
+            position: relative;
+            padding: 100px;
+            margin: 10px;
+        }
+    </style>
+
 </head>
 
 <body>
